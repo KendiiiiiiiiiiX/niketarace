@@ -2,15 +2,15 @@ h1 {
  color: red;
 }
 
-.caca {
+.test {
  color: yellow;
- font-size: 20px;
+ font-size: 50px;
  font-style: italic;
 }
 
 body {
  background-color: gray;
- font-size: 10px;
+ font-size: 40px;
  font-family: Courier New;
  font-weight: bold;
 }
