@@ -2,6 +2,8 @@ h1 {
  color: red;
 }
 
-p {
- color: blue;
+body {
+ background-color: gray;
+ font-family: Arial
 }
+
