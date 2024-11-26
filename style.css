@@ -4,10 +4,13 @@ h1 {
 
 .caca {
  color: yellow;
+ font-size: 70px;
+ font-style: italic;
 }
 
 body {
  background-color: gray;
- font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+ font-size: 60px;
+ font-family: Courier New;
+ font-weight: bold;
 }
-
