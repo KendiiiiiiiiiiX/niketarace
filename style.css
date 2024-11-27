@@ -1,29 +1,148 @@
-img {
- border-radius: 75px;
+/* Corps principal */
+body {
+  background-color: slateblue;
+  font-family: 'Trebuchet MS';
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
 h2 {
- font-size: 18px;
-}
-
-body {
- background-color: slateblue;
- font-family: 'Trebuchet MS';
- color: white;
- text-align: center;
+  font-size: 18px;
 }
 
 a {
- background-color: white;
- font-size: 20px;
- border-radius: 10px;
- padding: 10px;
- text-align: center;
- margin: 10px;
- color: slateblue;
+  background-color: white;
+  font-size: 20px;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  margin: 10px;
+  color: slateblue;
 }
 
 .ntm {
   color: red;
   background-color: khaki;
+}
+
+img {
+  border-radius: 75px;
+}
+
+/* Header */
+header {
+  background-color: darkslateblue; /* Couleur de fond du header */
+  padding: 20px 0; /* Espacement vertical */
+  border-radius: 7px;
+  position: relative;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+header nav ul li {
+  margin: 0 15px;
+}
+
+header nav ul li a.header-button {
+  color: white;
+  background-color: darkslateblue;
+  padding: 8px 15px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 18px;
+  transition: background-color 0.3s;
+}
+
+header nav ul li a.header-button:hover {
+  background-color: lightblue;
+  color: darkslateblue;
+}
+
+/* Menu hamburger (visible sur petits écrans) */
+.menu-icon {
+  display: none; /* Masqué par défaut */
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 30px;
+  cursor: pointer;
+  color: white;
+}
+
+.close-icon {
+  display: none; /* Masqué par défaut */
+  position: absolute;
+  top: 20px;
+  right: 20px; /* Icône fermée sur le côté droit du menu */
+  font-size: 30px;
+  cursor: pointer;
+  color: white;
+}
+
+#sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px; /* Hors de l'écran */
+  width: 250px;
+  height: 100%;
+  background-color: darkslateblue;
+  padding-top: 60px;
+  transition: left 0.3s ease;
+  z-index: 1000;
+}
+
+#sidebar.active {
+  left: 0; /* Menu visible */
+}
+
+#sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#sidebar ul li {
+  margin: 20px 0;
+}
+
+#sidebar ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  display: block;
+  padding: 10px 20px;
+  transition: color 0.3s;
+  background-color: darkslateblue;
+}
+
+#sidebar ul li a:hover {
+  color: darkslateblue;
+  background-color: lightblue;
+}
+
+/* Styles pour petits écrans */
+@media (max-width: 600px) {
+  header nav ul {
+    display: none; /* Masquer le menu normal */
+  }
+
+  header {
+    padding: 10px 0; /* Réduire le padding du header sur mobile */
+  }
+
+  .menu-icon {
+    display: block; /* Afficher l'icône burger */
+  }
+
+  .close-icon {
+    display: block; /* Afficher l'icône de fermeture */
+  }
 }
