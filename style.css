@@ -1,11 +1,91 @@
 /* Corps principal */
 body {
-  background-color: slateblue;
+  background-color: #383838;
   font-family: 'Trebuchet MS';
   color: white;
   text-align: center;
   margin: 0;
   padding: 0;
+}
+
+.contact-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(285px, 315px));
+  justify-content: center;
+  width: 100%;
+}
+
+.contact-card {
+  background-color: #212121;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 200px;
+  height: 150px;
+  padding: 20px;
+  text-align: center;
+  margin: 20px auto;
+}
+
+.contact-card__hero {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.contact-icon {
+  width: 50px;  /* Ajustez la taille de l'icône selon vos préférences */
+  height: 50px;
+}
+
+.contact-card__content h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.separator {
+  background-color: green; /* Remplace la variable par une couleur explicite (orange) */
+  height: 2px;
+  width: 70px;
+  margin: 1rem auto;
+  border-radius: 2px;
+}
+
+.email {
+  font-size: 16px;
+  color: white;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.discord {
+  font-size: 16px;
+  color: white;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.instagram {
+  font-size: 16px;
+  color: white;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.boutonjustela {
+  display: inline-block; /* Transforme le bouton en élément de taille adaptée */
+  color: white;
+  background-color: #212121;
+  padding: 8px 15px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 18px;
+  transition: background-color 0.3s;
+}
+
+.boutonjustela:hover {
+  background-color: #838282;
+  color: #212121;
 }
 
 h2 {
@@ -19,7 +99,7 @@ a {
   padding: 10px;
   text-align: center;
   margin: 10px;
-  color: slateblue;
+  color: #545454;
 }
 
 .ntm {
@@ -33,9 +113,12 @@ img {
 
 /* Header */
 header {
-  background-color: darkslateblue; /* Couleur de fond du header */
+  background-color: #212121; /* Couleur de fond du header */
   padding: 20px 0; /* Espacement vertical */
-  border-radius: 7px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 7px;
+  border-bottom-left-radius: 7px;
   position: relative;
 }
 
@@ -53,7 +136,7 @@ header nav ul li {
 
 header nav ul li a.header-button {
   color: white;
-  background-color: darkslateblue;
+  background-color: #212121;
   padding: 8px 15px;
   border-radius: 6px;
   text-decoration: none;
@@ -62,8 +145,8 @@ header nav ul li a.header-button {
 }
 
 header nav ul li a.header-button:hover {
-  background-color: lightblue;
-  color: darkslateblue;
+  background-color: #838282;
+  color: #212121;
 }
 
 /* Menu hamburger (visible sur petits écrans) */
@@ -93,7 +176,7 @@ header nav ul li a.header-button:hover {
   left: -250px; /* Hors de l'écran */
   width: 250px;
   height: 100%;
-  background-color: darkslateblue;
+  background-color: #212121;
   padding-top: 60px;
   transition: left 0.3s ease;
   z-index: 1000;
@@ -120,12 +203,12 @@ header nav ul li a.header-button:hover {
   display: block;
   padding: 10px 20px;
   transition: color 0.3s;
-  background-color: darkslateblue;
+  background-color: #545454;
 }
 
 #sidebar ul li a:hover {
-  color: darkslateblue;
-  background-color: lightblue;
+  color: #212121;
+  background-color: #838282;
 }
 
 /* Styles pour petits écrans */
@@ -145,4 +228,69 @@ header nav ul li a.header-button:hover {
   .close-icon {
     display: block; /* Afficher l'icône de fermeture */
   }
+}
+
+footer {
+  margin-top: auto;
+  background-color: #212121;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  width: 100%;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 0 20px;
+}
+
+.footer-section {
+  flex: 1 1 300px;
+  margin: 10px;
+}
+
+.footer-section h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin: 5px 0;
+}
+
+.footer-section ul li a {
+  color: #FFFFFF; /* Couleur du lien */
+  text-decoration: none; /* Supprime le soulignement */
+  font-size: 16px; /* Taille de la police adaptée */
+  margin: 5px 50px; /* Un peu d'espace autour du texte */
+  display: block; /* L'afficher comme un bloc pour faciliter la gestion des marges */
+  transition: color 0.3s ease; /* Effet au survol */
+  background-color: #545454;
+}
+
+.footer-section ul li a:hover {
+  color: #ffffff; /* Couleur du texte au survol */
+  text-decoration: underline; /* Souligné au survol */
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  border-top: 1px solid lightgray;
+  padding-top: 10px;
+  font-size: 14px;
+  line-height: 1.25;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
 }
