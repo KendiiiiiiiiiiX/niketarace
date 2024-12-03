@@ -8,6 +8,10 @@ body {
   padding: 0;
 }
 
+.floating {
+    animation: floating 3s ease-in-out infinite;
+}
+
 .contact-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(285px, 315px));
