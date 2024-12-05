@@ -1,71 +1,128 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Accueil - Salut bonsoir c'est polo !</title>
-  <link rel="icon" type="image/png" href="https://cdn.discordapp.com/avatars/802906957870661644/07de636fadd87c969c87e9e659460255.png"/>
-  <link rel="stylesheet" href="style.css">
-    <!-- Lien vers Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<html><head><meta charset="UTF-8">
+<title>C'est mwa - KendiX</title>
+<link rel="stylesheet" href="style.css">
+<link rel="icon" type="image/png" href="https://cdn.discordapp.com/avatars/802906957870661644/07de636fadd87c969c87e9e659460255.png">
 </head>
 <body>
-  <header>
-    <span class="menu-icon" onclick="toggleMenu()">&#9776;</span> <!-- Icône hamburger -->
-    <nav>
-      <ul>
-        <li><a href="index.html" class="header-button">Accueil</a></li>
-        <li><a href="about.html" class="header-button">À propos</a></li>
-        <li><a href="contact.html" class="header-button">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+    <div class="container">
+        <div class="profile">
+            <img class="avatar" src="https://cdn.discordapp.com/avatars/802906957870661644/07de636fadd87c969c87e9e659460255.png?format=webp&quality=lossless&width=265&height=265" alt="Avatar" width="200" height="200" style="border-radius: 50%; background: linear-gradient(135deg, #5652CA, #5282CA); padding: 10px;"/>
+            <div class="bio">
+                <h1>KendiX</h1>
+                <p>Bonsoir ça dit koi l'ekip, ça dit feur ouuuu ? Ok je sors.. :D</p>
+                <div class="social-links">
+                    <a href="https://discord.com/invite/xyyVbNkqEu" class="social-btn">Discord</a>
+                    <a href="https://www.tiktok.com/@kendixtv" class="social-btn">Tiktok</a>
+                    <a href="https://www.youtube.com/@kendiXLeVrai" class="social-btn">Youtube</a>
+                    <a href="https://www.instagram.com/kendiiiix/" class="social-btn">Instagram</a>
+                    <a href="mailto:kendixtv@gmail.com" class="social-btn">E-mail</a>
+                </div>
+            </div>
+        </div>
 
-  <div id="sidebar">
-  <span class="close-icon" onclick="toggleMenu()">&#10005;</span>
-  <ul>
-    <li><a href="index.html" class="menu-button">Accueil</a></li>
-    <li><a href="about.html" class="menu-button">À propos</a></li>
-    <li><a href="contact.html" class="menu-button">Contact</a></li>
-  </ul>
-</div>
-  <br>
-  <!-- Contenu principal de la page d'accueil -->
-  <h1 class="floating">Hello ! Moi c'est KendiX.</h1>
-  <h2>Il n'y a rien sur cette page..<br><a class="boutonjustela" href="about.html">À propos de moi</a></h2>
-  <br>
- <div style="text-align: center;">
-</div>
+        <div class="skills">
+            <div class="skill-card">
+                <h3>C'est moi</h3>
+                <p>J'ai 16 ans, fin j'crois..</p>
+                <p>J'adore l'informatique et j'sais pas, Minecraft aussi</p>
+                <div class="skill-progress" style="--progress: 95%"></div>
+            </div>
+            <div class="skill-card">
+                <h3>Designer de kalité</h3>
+                <p>Graphiste de temps en temps..</p>
+                <p>Genre, quand j'en ai envie..</p>
+                <div class="skill-progress" style="--progress: 85%"></div>
+            </div>
+            <div class="skill-card">
+                <h3>Full-Stack Development</h3>
+                <p>HTML, CSS, JAVASCRIPT</p>
+                <p>Et le reste azy jsp encore j'ai fais ffait zbii</p>
+                <div class="skill-progress" style="--progress: 90%"></div>
+            </div>
+            <div class="skill-card">
+                <h3>Minecraft</h3>
+                <p>Minecraft, pas Mein Kampf hein</p>
+                <p>J'fais des servs defois..</p>
+                <div class="skill-progress" style="--progress: 80%"></div>
+            </div>
+        </div>
+        <div class="project-section">
+            <h2>Les projets tu connais hein</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3>Rien</h3>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJ8DYJQrfrGXXbZJ4PvKPllkFzWNobL-u8gA&s" 
+                         alt="KataBump Logo" style="width:100px; height:100px;">
+                    <p>C'est vide.</p>
+                    <p>Pas grand chose en ce moment..</p>
+                    <a href="rien.html" class="project-btn">J'AI DIS YA RIEN POURQUOI TU CLIQUES</a>
+                </div>
+                <div class="project-card">
+                    <h3>Eh mec, écoute</h3>
+                    <p>Tié moche, *crache*</p>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdkhOP0zW89GbAH-YBlKcJNSddOC0_rx3Sl562L6BNa7mucAOxD0B-hbOP9ONl5wwUJhI&usqp=CAU" 
+                         alt="Secret Project" style="width:200px; height:200px;">
+                </div>
+            </div>
+        </div>
+    </div>
 
-  <script src="script.js"></script>
 
-  <!-- Footer -->
-<footer>
-  <div class="footer-container">
-    <div class="footer-section">
-      <h4>À propos</h4>
-      <p>Découvrez plus sur moi et mes projets ici. Ce site est ma vitrine personnelle !</p>
-    </div>
-    <div class="footer-section">
-      <h4>Liens utiles</h4>
-      <ul>
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="about.html">À propos</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </div>
-    <div class="footer-section">
-      <h4>Suivez-moi</h4>
-      <ul>
-        <li><a href="https://discord.gg/xyyVbNkqEu">Discord</a></li>
-        <li><a href="https://www.youtube.com/@kendiXLeVrai">Youtube</a></li>
-        <li><a href="https://www.instagram.com/kendiiiix/">Instagram</a></li>
-      </ul>
-    </div>
-  </div>
-  <div class="footer-bottom">
-    <p>KendiX © 2024 Tous Droits Réservés</p>
-  </div>
-</footer>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Bonsoir</h3>
+                    <p>Ah j'dois dire ? Ah shit, bah voilà moi c'est KendiX, j'suis trop bg voilà et trop fort, et trop beau, et trop fort, et trop beau, ok j'arrête.. Vous avez pas d'humour hein !</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2024 Batman (bah oe logique). Tous Droits Réservés. Nan y'a rien lv j'suis personne..</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.skill-card').forEach(card => {
+            card.addEventListener('mouseover', () => {
+                card.style.background = 'rgba(255, 255, 255, 0.15)';
+            });
+            
+            card.addEventListener('mouseout', () => {
+                card.style.background = 'rgba(255, 255, 255, 0.1)';
+            });
+
+            card.addEventListener('touchstart', () => {
+                card.style.background = 'rgba(255, 255, 255, 0.15)';
+            });
+            
+            card.addEventListener('touchend', () => {
+                card.style.background = 'rgba(255, 255, 255, 0.1)';
+            });
+        });
+
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.project-card').forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(20px)';
+            card.style.transition = 'all 0.6s ease-out';
+            observer.observe(card);
+        });
+    </script>
 </body>
 </html>
