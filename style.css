@@ -328,11 +328,30 @@ h1 {
 }
 
 @media (max-width: 768px) {
-    .footer-content {
+    body {
+        text-align: center; /* Centre le contenu globalement */
+    }
+
+    .profile {
+        flex-direction: column; /* Aligne la bio sous l'avatar */
+        justify-content: center;
         text-align: center;
     }
-    
-    .footer-social {
+
+    .bio {
+        text-align: center; /* Centre le texte */
+    }
+
+    .skills, .project-grid {
+        grid-template-columns: 1fr; /* Une seule colonne */
+    }
+
+    .social-links {
         justify-content: center;
+    }
+
+    .project-card img {
+        width: 100%; /* Adapte les images au conteneur */
+        height: auto;
     }
 }
