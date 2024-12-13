@@ -336,3 +336,54 @@ h1 {
         justify-content: center;
     }
 }
+
+/* Mobile-specific styles */
+@media (max-width: 480px) {
+    .bio h1 {
+        font-size: 1.5rem;
+    }
+
+    .bio p {
+        font-size: 0.9rem;
+    }
+
+    .avatar {
+        width: 120px;
+        height: 120px;
+    }
+
+    .social-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .social-btn {
+        width: 100%;
+        text-align: center;
+        font-size: 0.85rem;
+        padding: 0.6rem 1rem;
+    }
+
+    .skills {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-content {
+        gap: 1rem;
+        padding: 0 1rem;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-card img {
+        width: 100%;
+        height: auto;
+    }
+
+    .footer-social {
+        gap: 0.5rem;
+    }
+}
