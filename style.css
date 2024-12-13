@@ -374,6 +374,12 @@ h1 {
         padding: 0 1rem;
     }
 
+    .footer-bottom {
+        max-width: 90%;
+        margin: 0 auto;
+        padding-top: 1rem; /* Ajuste selon besoin */
+    }
+
     .project-grid {
         grid-template-columns: 1fr;
     }
