@@ -1,134 +1,582 @@
-<html><head><meta charset="UTF-8">
-<title>C'est mwa - KendiX</title>
-<link rel="stylesheet" href="style.css">
-<link rel="icon" type="image/png" href="https://cdn.discordapp.com/avatars/802906957870661644/07de636fadd87c969c87e9e659460255.png">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KendiX</title>
+
+  <link rel="shortcut icon" href="./assets/images/logo.png" type="image/png">
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <div class="container">
-        <div class="profile">
-            <img class="avatar" src="https://cdn.discordapp.com/avatars/802906957870661644/07de636fadd87c969c87e9e659460255.png?format=webp&quality=lossless&width=265&height=265" alt="Avatar" width="200" height="200" style="border-radius: 50%; background: linear-gradient(135deg, #5652CA, #5282CA); padding: 10px;"/>
-            <div class="bio">
-                <h1>KendiX</h1>
-                <p>Bonsoir ça dit koi l'ekip, ça dit feur ouuuu ? Ok je sors.. :D</p>
-                <div class="social-links">
-                    <a href="https://discord.com/invite/xyyVbNkqEu" class="social-btn">Discord</a>
-                    <a href="https://www.tiktok.com/@kendixtv" class="social-btn">Tiktok</a>
-                    <a href="https://www.youtube.com/@kendiXLeVrai" class="social-btn">Youtube</a>
-                    <a href="https://www.instagram.com/kendiiiix/" class="social-btn">Instagram</a>
-                    <a href="mailto:kendixtv@gmail.com" class="social-btn">E-mail</a>
-                </div>
-            </div>
+
+  <main>
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/logo.png" alt="KendiX" width="80" class="logokendix">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="KendiX">KendiX</h1>
+
+          <p class="title">Dev Mc + Front-End + "Graphiste"</p>
         </div>
 
-        <a href="https://kendix.netlify.app/cadeau.html" class="social-btn" style="display: block; margin: 20px auto; text-align: center; background-color: #007bff; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none;">PETIT CADEAU ICI !!!</a>
-        
-        <div class="skills">
-            <div class="skill-card">
-                <h3>C'est moi</h3>
-                <p>J'ai 16 ans, fin j'crois..</p>
-                <p>J'adore l'informatique et j'sais pas, Minecraft aussi</p>
-                <div class="skill-progress" style="--progress: 90%"></div>
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
             </div>
-            <div class="skill-card">
-                <h3>Designer de kalité</h3>
-                <p>Graphiste de temps en temps..</p>
-                <p>Genre, quand j'en ai envie..</p>
-                <div class="skill-progress" style="--progress: 75%"></div>
+
+            <div class="contact-info">
+              <p class="contact-title">E-mail</p>
+
+              <a href="mailto:kendixtv@gmail.com" class="contact-link">kendixtv@gmail.com</a>
             </div>
-            <div class="skill-card">
-                <h3>Full-Stack Development</h3>
-                <p>HTML, CSS, JAVASCRIPT</p>
-                <p>Et le reste azy jsp encore j'ai pas fait zbii</p>
-                <div class="skill-progress" style="--progress: 38%"></div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="logo-discord"></ion-icon>
             </div>
-            <div class="skill-card">
-                <h3>Minecraft</h3>
-                <p>Minecraft, pas Mein Kampf hein</p>
-                <p>J'fais des servs defois..</p>
-                <div class="skill-progress" style="--progress: 97%"></div>
+
+            <div class="contact-info">
+              <p class="contact-title">Discord</p>
+
+              <a href="https://discord.com/invite/xyyVbNkqEu" class="contact-link">@kendix</a>
             </div>
-        </div>
-        
-        <div class="project-section">
-            <h2>Les projets du moment/anciens projets</h2>
-            <div class="project-grid">
-                <div class="project-card">
-                    <h3>Mes anciens designs</h3>
-                    <img src="https://mir-s3-cdn-cf.behance.net/user/115/a255d71863966757.66abed54ebb93.png" 
-                         alt="Designs" style="width:200px; height:200px;">
-                    <p><strong>Ancien designer</strong></p>
-                    <p>Ancienne expérience dans les miniatures, modélisation 3D Minecraft, bannières et logos.. (pas ouf)</p>
-                    <a href="https://www.behance.net/kendixtv1" class="project-btn">Lien vers mon Behance</a>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Anniversaire</p>
+
+              <time datetime="2008-01-10">1 Octobre, 2008</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Localisation</p>
+
+              <address>France</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://discord.com/invite/xyyVbNkqEu" class="social-link">
+              <ion-icon name="logo-discord"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.tiktok.com/@kendixtv" class="social-link">
+              <ion-icon name="logo-tiktok"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.youtube.com/@kendiXLeVrai" class="social-link">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.instagram.com/kendiiiix/" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="mailto:kendixtv@gmail.com" class="social-link">
+              <ion-icon name="mail-outline"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+    <div class="main-content">
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>À propos</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Ma vie</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="à propos">
+
+        <header>
+          <h2 class="h2 article-title">À propos de moi</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            Moi c'est KendiX, j'ai 16 ans je suis un jeune passionné d'informatique, et de jeux vidéos.
+            Je bosse parfois sur des serveurs minecraft, j'ai été graphiste, quelques temps, mais c'était pas ouf...
+          </p>
+
+          <p>
+            Actuellement je travaille sur un serveur Minecraft nommé "Horizon", un serveur minecraft Skyblock Gens en 1.21 !
+            Serveur appartenant anciennement à Jeawyn, actuellement sous l'emprise de Kameloup. Un jeune vidéaste nommé Oxidax,
+            s'occupait autrefois du serveur, et y faisait des vidéos et streams dessus, mais c'est maintenant compliqué pour lui avec ses études.
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">Ce que je fais</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg
+                " alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Serveurs minecraft</h4>
+
+                <p class="service-item-text">
+                  J'essaie de faire des serveurs de qualités, très bon mood, avec des ajouts réguliers.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Dev</h4>
+
+                <p class="service-item-text">
+                  Je débute encore, j'essaie de m'améliorer de jours en jours.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Ancien graphiste</h4>
+
+                <p class="service-item-text">
+                  J'ai autrefois été graphiste, j'ai fais des miniatures, des bannières, des photos de profil...
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials
+        -->
+
+        <section class="testimonials">
+
+          <h3 class="h3 testimonials-title">La familia della mama</h3>
+
+          <ul class="testimonials-list has-scrollbar">
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/frifri.png" alt="Frifri" width="60" data-testimonials-avatar class="logokendix">
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Frifri</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Frifri est un ami que je connais depuis maintenant 5 ans :D
+                    Il a plus de 3k abonnés sur Youtube !
+                  </p>
                 </div>
-                <div class="project-card">
-                    <h3>Horizon Tycoon</h3>
-                    <img src="https://i.imgur.com/LHLRoaL.png" 
-                         alt="Horizon Tycoon" style="width:200px; height:200px;">
-                    <p><strong>Développeur sur le serveur Minecraft Horizon</strong></p>
-                    <p>Gère toute la partie technique du serveur ; <br> Fonctionnalités, Ajouts, Débogage, développement en général..</p>
-                    <a href="https://hopelamc.fr" class="project-btn">Site internet</a>
-                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/frifri.png" alt="Frifri" width="80" data-modal-img class="logokendix">
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
             </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Frifri</h4>
+
+              <time datetime="2021-06-14">Né le 26 août 2005</time>
+
+              <div data-modal-text>
+                  <p>
+                    Frifri est un ami que je connais depuis maintenant 5 ans :D
+                    Il a plus de 3k abonnés sur Youtube !
+                  </p>
+              </div>
+
+            </div>
+
+          </section>
+
         </div>
+
+      </article>
+
+      <article class="resume" data-page="ma vie">
+
+        <header>
+          <h2 class="h2 article-title">Ma vie</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Expérience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Dev</h4>
+
+              <span>2024 - Maintenant</span>
+
+              <p class="timeline-text">
+                Débute le developpement Web + Bots discord (Javascript)
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Minecraft</h4>
+
+              <span>2022 - Maintenant</span>
+
+              <p class="timeline-text">
+                Création de serveurs minecraft et plugins
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Graphiste</h4>
+
+              <span>2021 - 2024</span>
+
+              <p class="timeline-text">
+                J'ai été graphiste, mais rien de ouf..
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">Mes compétences</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Web design</h5>
+                <data value="20">20%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 20%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Minecraft</h5>
+                <data value="95">95%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 95%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Graphisme</h5>
+                <data value="30">30%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 43%;"></div>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>Projets</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Sélectionne une catégorie</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>Projets</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item active" data-filter-item data-category="projets">
+              <a href="https://www.behance.net/kendixtv1">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/behance.png" alt="behance" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Mon behance</h3>
+
+                <p class="project-category">Behance</p>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="contact">
+          <h3 class="h3 form-title">Me contacter</h3>
+          <ul class="social-links">
+            <li>
+              <a href="https://discord.com/invite/xyyVbNkqEu" target="_blank">
+                <ion-icon name="logo-discord"></ion-icon> Discord
+              </a>
+            </li>
+            <li>
+              <a href="https://www.tiktok.com/@kendixtv" target="_blank">
+                <ion-icon name="logo-tiktok"></ion-icon> Tiktok
+              </a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/@kendiXLeVrai" target="_blank">
+                <ion-icon name="logo-youtube"></ion-icon> Youtube
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/kendiiiix/" target="_blank">
+                <ion-icon name="logo-instagram"></ion-icon> Instagram
+              </a>
+            </li>
+            <li>
+              <a href="mailto:kendixtv@gmail.com" target="_blank">
+                <ion-icon name="mail-outline"></ion-icon>kendixtv@gmail.com
+              </a>
+            </li>
+          </ul>
+        </section>
+        
+
+      </article>
+
     </div>
 
+  </main>
 
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>Bonsoir</h3>
-                    <p>Ah j'dois dire ? Bah j'sais pas moi..</p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="footer-bottom">
-                <p>© 2024 Batman. Tous Droits Réservés. Website by KendiX.</p>
-            </div>
-        </div>
-    </footer>
 
-    <script>
-        document.querySelectorAll('.skill-card').forEach(card => {
-            card.addEventListener('mouseover', () => {
-                card.style.background = 'rgba(255, 255, 255, 0.15)';
-            });
-            
-            card.addEventListener('mouseout', () => {
-                card.style.background = 'rgba(255, 255, 255, 0.1)';
-            });
 
-            card.addEventListener('touchstart', () => {
-                card.style.background = 'rgba(255, 255, 255, 0.15)';
-            });
-            
-            card.addEventListener('touchend', () => {
-                card.style.background = 'rgba(255, 255, 255, 0.1)';
-            });
-        });
 
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
 
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateY(0)';
-                }
-            });
-        }, observerOptions);
 
-        document.querySelectorAll('.project-card').forEach(card => {
-            card.style.opacity = '0';
-            card.style.transform = 'translateY(20px)';
-            card.style.transition = 'all 0.6s ease-out';
-            observer.observe(card);
-        });
-    </script>
+  <!--
+    - custom js link
+  -->
+  <script src="script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
+
 </html>
